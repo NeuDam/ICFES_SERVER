@@ -15,5 +15,5 @@ async def root():
 
 @app.post('/consulta')
 async def query_icfes(body: BodyRequest):
-	response = Icfes(born_date="00/00/2000", young=True, document=123456789).query_test()
+	response = Icfes(born_date=body.born, young=body.young, document=body.document).query_test()
 	return response
