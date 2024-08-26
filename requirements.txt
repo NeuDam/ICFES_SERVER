@@ -2,3 +2,5 @@ fastapi
 fastapi-socketio
 uvicorn
 requests
+apscheduler
+dotenv
