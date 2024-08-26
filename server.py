@@ -1,6 +1,6 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from typing import List
@@ -40,7 +40,7 @@ class BodyRequest(BaseModel):
 class EmailRequest(BaseModel):
     document: int
     born: str
-    email: EmailStr
+    email: str
 
 def parse_information(data, document):
 
