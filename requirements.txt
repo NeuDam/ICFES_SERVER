@@ -3,3 +3,4 @@ fastapi-socketio
 uvicorn
 requests
 apscheduler
+python-dotenv
